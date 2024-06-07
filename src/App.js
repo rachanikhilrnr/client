@@ -20,7 +20,9 @@ function App(){
   }
   return(
     <>
-
+      <center>
+        <h1>Travel Experience</h1>
+      </center>
       {
         post.map((postt) => {
           return(
@@ -29,8 +31,12 @@ function App(){
                 <td>{postt.startdate}</td>
                 <td>{postt.enddate}</td>
                 <td>{postt.cost}</td>
+              </tr>
+              <tr>
                 <td>{postt.description}</td>
               </tr>
+              <br></br>
+              <br></br>
               {/* <h1>Start Date:{postt.startdate}</h1>
               <h1>End Date:{postt.enddate}</h1>
               <h1>Overal Cost :{postt.cost}</h1>
