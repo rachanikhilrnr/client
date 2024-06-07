@@ -10,13 +10,13 @@ function App(){
   const[description,setDescription] = useState();
 
   useEffect(() => {
-    axios.get("http://localhost:5000/posts")
+    axios.get("https://te-backend.vercel.app/posts")
     .then((posts) => setPost(posts.data))
     .catch((err) => console.log(err));
   },[post]);
 
   const submit = () => {
-    axios.post("http://localhost:5000/posts",{startdate,enddate,cost,description})
+    axios.post("https://te-backend.vercel.app/posts",{startdate,enddate,cost,description})
   }
   return(
     <>
