@@ -39,9 +39,9 @@ function App(){
           )
         })
       }
-      <input type='text' placeholder='Start Date' onChange={(e) => setStartdate(e.target.value)}></input>
-      <input type='text' placeholder='End Date' onChange={(e) => setEnddate(e.target.value)}></input>
-      <input type='text' placeholder='Cost' onChange={(e) => setCost(e.target.value)}></input>
+      <input type='date' placeholder='Start Date' onChange={(e) => setStartdate(e.target.value)}></input>
+      <input type='date' placeholder='End Date' onChange={(e) => setEnddate(e.target.value)}></input>
+      <input type='number' placeholder='Cost' onChange={(e) => setCost(e.target.value)}></input>
       <input type='text' placeholder='Description' onChange={(e) => setDescription(e.target.value)}></input>
       <button onClick={submit}>Submit</button>
 
